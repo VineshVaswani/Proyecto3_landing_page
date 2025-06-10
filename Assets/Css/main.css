@@ -1,0 +1,298 @@
+:root {
+
+--bg: #ffffff;
+--primary:#81B29A;
+--secondary:#2E3A35;
+--light-text:#6B7B75;
+--dark-text: #000000;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container > * + * {
+  margin-top: 1rem;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+body {
+  background-color: var(--bg);
+}
+
+.encabezado {
+    margin: 0 auto;
+    width: 80%;
+}
+
+header.encabezado > nav {
+    display: flex;
+    background-color: var(--bg);
+    align-content: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+}
+
+.nav-logo {
+    max-width: 180px;
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: var(--primary);
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.nav-menu a:hover {
+    color: var(--secondary);
+}
+
+.hero {
+    background:
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
+    url("../Img/Hero_Soap.jpg");
+    background-blend-mode: darken;
+    background-size: cover;
+    background-position: center;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero__title {
+    font-size: 40px;
+    margin-bottom: 1rem;
+}
+
+.hero__text {
+    font-size: 20px;
+    margin-bottom: 1.5rem;
+    color: #141414;
+}
+.hero__cta {
+    display: inline-block;
+    justify-content: center;
+    text-decoration: none;
+    margin-top: 0.5rem;
+    border-radius: 4px;
+    color: var(--bg);
+    background-color: var(--secondary);
+    padding: 0.75rem 1.5rem;
+}
+
+.hero__subscribe {
+    margin-top: 4rem;
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.hero__subscribe label {
+  display: none;
+}
+
+.hero__subscribe input {
+    flex: 1;
+    padding: 0.5rem 1rem;
+    max-width: 300px;
+    border-radius: 4px;
+    border: solid 1px #000000;
+    background-color: rgba(255,255,255,0.6);
+}
+
+.hero__subscribe input::placeholder {
+    color: rgba(34, 34, 34, 0.801);
+}
+
+.hero__subscribe button {
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    border: none;
+    background-color: var(--primary);
+    color: var(--bg);
+}
+
+#por-que-nosotros {
+    padding: 4rem 0;
+    margin: 0 auto;
+    width: 80%;
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#por-que-nosotros .section-title {
+    font-size: 2rem;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.por-que__icono{
+    font-size: 2.5rem;
+    color: var(--primary);
+    margin-bottom: 1rem;
+}
+
+.por-que__item {
+    flex: 1 1 240px;
+    background-color: #F5F5F5;
+    border-radius: 8px;
+    padding: 2.5rem 2rem;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    transition: transform .2s, box-shadow .2s;
+}
+
+.por-que__item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+#productos{
+    padding: 4rem 0;
+}
+
+.productos__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+}
+
+.producto {
+    background: var(--bg);
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    justify-content: center;
+    padding: 0;
+}
+
+.product__name,
+.product__price {
+    text-align: center;
+    width: 100%;
+}
+
+.product__img {
+    width: 100%;
+    aspect-ratio: 4/3;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.product__name {
+    font-size: 1.2rem;
+    margin: 1rem 0 0.5rem;
+    color: var(--secondary);
+}
+
+.product__cta {
+    margin-top: 0.5rem;
+    padding: .75rem;
+    text-align: center;
+    text-decoration: none;
+    background: var(--primary);
+    color: var(--bg);
+    border-radius: 4px;
+}
+
+#productos .section-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: var(--dark-text);
+    text-align: center;
+}
+
+.footer {
+    background-color: var(--light-text);
+    padding: 2rem 0;
+}
+
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    align-items: flex-start;
+    max-width: 1200px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.footer h4{
+    margin-bottom: 0.5rem;
+}
+
+.footer h4 + * {
+    margin-top: 0.5rem;
+    line-height: 1.5;
+    color: var(--secondary);
+}
+
+
+
+.footer__contacto li,
+.footer__redes li {
+    list-style: none;
+}
+
+.footer__contacto a,
+.footer__redes a {
+    text-decoration: none;
+    color: var(--secondary);
+}
+
+.footer__redes ul{
+    display: flex;
+    gap: 0.5rem;
+    padding: 0;
+    margin: 0;
+    margin-top: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+.footer__contacto ul{
+    margin-top: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.footer__redes i {
+    font-size: 1.5rem;
+    color: var(--secondary);
+}
+
+.img__pagos {
+    height: 65px;
+    margin-right: 1rem;
+    vertical-align: middle;
+}
