@@ -4,7 +4,7 @@ Este repositorio contiene la Landing Page de Aurave - Esencia Viva, una marca de
 
 Prototipo web:
 
-! [] (https://github.com/VineshVaswani/Proyecto3_landing_page/blob/main/Prototipo%20Landing.jpg)
+![Prototipo Landing](https://github.com/user-attachments/assets/9f861ab0-5d37-4f3a-ab23-3342399bd00a)
 
 Web Deploy: https://willowy-swan-ea7df6.netlify.app
 
